@@ -246,6 +246,7 @@ void MatmulOperator::mat_mul_all_techniques(struct matmul_params *params) {
     // TODO: Join threads
     for (int j = 0; j < num_thread; j++) {
         pthread_join(thread_pool[j], NULL);
+        
     }
 };
 }  // namespace matmul
